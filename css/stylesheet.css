@@ -137,6 +137,16 @@ mark:hover    {
     "text images";
 }
 
+@media screen (max-width: 1000px) {
+    .entries    {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "text"
+    "images";}     
+}
+
 .text   {
     display: flex;
     flex-direction: column;
@@ -155,8 +165,9 @@ mark:hover    {
 
 .entries img    {
     width: 220px;
-    height: 220px;
-    display: block;
+    height: auto;
+    display: flex;
+    align-items: top;
 }
 
 footer  {
@@ -179,6 +190,12 @@ footer  {
 
 .footerright    {
     text-align: right;
+}
+
+.footerright2    {
+    text-align: right;
+    text-decoration: line-through;
+
 }
 
 footer  a:hover  {
